@@ -18,42 +18,32 @@ const Skills = () => {
 
   const skillsData = [
     // Frontend
-    { id: 1, name: 'React', level: 90, icon: '⚛️', category: 'frontend', color: '#61DAFB', experience: '4 years', projects: 15, description: 'Building interactive UIs with React hooks, context, and Redux' },
-    { id: 2, name: 'JavaScript', level: 85, icon: '💛', category: 'frontend', color: '#F7DF1E', experience: '5 years', projects: 25, description: 'ES6+, async programming, DOM manipulation' },
-    { id: 3, name: 'TypeScript', level: 80, icon: '🔷', category: 'frontend', color: '#3178C6', experience: '3 years', projects: 12, description: 'Type safety, interfaces, generics, and advanced types' },
-    { id: 4, name: 'HTML5', level: 95, icon: '🌐', category: 'frontend', color: '#E34F26', experience: '5 years', projects: 30, description: 'Semantic HTML, accessibility, SEO optimization' },
-    { id: 5, name: 'CSS3', level: 90, icon: '🎨', category: 'frontend', color: '#1572B6', experience: '5 years', projects: 28, description: 'Flexbox, Grid, animations, responsive design' },
-    { id: 6, name: 'Next.js', level: 75, icon: '▲', category: 'frontend', color: '#000000', experience: '2 years', projects: 8, description: 'SSR, SSG, API routes, server components' },
-    { id: 7, name: 'Tailwind', level: 85, icon: '🌊', category: 'frontend', color: '#06B6D4', experience: '3 years', projects: 14, description: 'Utility-first CSS, custom configurations' },
+    { id: 1, name: 'React', level: 90, icon: '⚛️', category: 'frontend', color: '#61DAFB', experience: '1 year', projects: 2, description: 'Building interactive UIs with React hooks, context, and Redux' },
+    { id: 2, name: 'JavaScript', level: 85, icon: '💛', category: 'frontend', color: '#F7DF1E', experience: '2 years', projects: 5, description: 'ES6+, async programming, DOM manipulation' },
+    { id: 3, name: 'TypeScript', level: 80, icon: '🔷', category: 'frontend', color: '#3178C6', experience: '2 years', projects: 6, description: 'Type safety, interfaces, generics, and advanced types' },
+    { id: 4, name: 'HTML5', level: 95, icon: '🌐', category: 'frontend', color: '#E34F26', experience: '3 years', projects: 10, description: 'Semantic HTML, accessibility, SEO optimization' },
+    { id: 5, name: 'CSS3', level: 90, icon: '🎨', category: 'frontend', color: '#1572B6', experience: '3 years', projects: 8, description: 'Flexbox, Grid, animations, responsive design' },
     { id: 8, name: 'Vue.js', level: 70, icon: '🟢', category: 'frontend', color: '#4FC08D', experience: '2 years', projects: 6, description: 'Vue 3, composition API, Vuex' },
     
     // Backend
-    { id: 9, name: 'Node.js', level: 85, icon: '💚', category: 'backend', color: '#68A063', experience: '4 years', projects: 18, description: 'REST APIs, Express, middleware, file handling' },
-    { id: 10, name: 'Python', level: 80, icon: '🐍', category: 'backend', color: '#3776AB', experience: '3 years', projects: 12, description: 'Django, Flask, data processing, automation' },
-    { id: 11, name: 'Express', level: 75, icon: '🚂', category: 'backend', color: '#000000', experience: '4 years', projects: 16, description: 'Routing, middleware, error handling' },
-    { id: 12, name: 'Django', level: 70, icon: '🎸', category: 'backend', color: '#092E20', experience: '2 years', projects: 5, description: 'ORM, admin panel, authentication' },
+    { id: 9, name: 'Node.js', level: 85, icon: '💚', category: 'backend', color: '#68A063', experience: '2 years', projects: 8, description: 'REST APIs, Express, middleware, file handling' },
+    { id: 10, name: 'Python', level: 80, icon: '🐍', category: 'backend', color: '#3776AB', experience: '3 years', projects: 2, description: 'Django, Flask, data processing, automation' },
+    { id: 11, name: 'Express', level: 75, icon: '🚂', category: 'backend', color: '#000000', experience: '1 years', projects: 3, description: 'Routing, middleware, error handling' },
     { id: 13, name: 'PHP', level: 75, icon: '🐘', category: 'backend', color: '#777BB4', experience: '3 years', projects: 10, description: 'Laravel, WordPress development' },
-    { id: 14, name: 'Laravel', level: 70, icon: '⚡', category: 'backend', color: '#FF2D20', experience: '2 years', projects: 7, description: 'Eloquent, blade templates, artisan' },
-    { id: 15, name: 'GraphQL', level: 65, icon: '◈', category: 'backend', color: '#E10098', experience: '2 years', projects: 4, description: 'Apollo, schemas, resolvers' },
-    { id: 16, name: 'REST API', level: 90, icon: '🔌', category: 'backend', color: '#25D366', experience: '4 years', projects: 22, description: 'API design, documentation, versioning' },
+    { id: 14, name: 'Laravel', level: 70, icon: '⚡', category: 'backend', color: '#FF2D20', experience: '1 years', projects: 3, description: 'Eloquent, blade templates, artisan' },
+    { id: 16, name: 'REST API', level: 90, icon: '🔌', category: 'backend', color: '#25D366', experience: '2 years', projects: 11, description: 'API design, documentation, versioning' },
     
     // Database
-    { id: 17, name: 'MongoDB', level: 75, icon: '🍃', category: 'database', color: '#47A248', experience: '3 years', projects: 12, description: 'Aggregation, indexing, mongoose' },
-    { id: 18, name: 'PostgreSQL', level: 80, icon: '🐘', category: 'database', color: '#336791', experience: '3 years', projects: 10, description: 'Complex queries, relationships, optimization' },
-    { id: 19, name: 'MySQL', level: 85, icon: '🐬', category: 'database', color: '#4479A1', experience: '4 years', projects: 18, description: 'Database design, stored procedures' },
-    { id: 20, name: 'Firebase', level: 70, icon: '🔥', category: 'database', color: '#FFCA28', experience: '2 years', projects: 8, description: 'Realtime DB, auth, cloud functions' },
-    { id: 21, name: 'Redis', level: 60, icon: '📀', category: 'database', color: '#DC382D', experience: '1 year', projects: 3, description: 'Caching, session management' },
-    { id: 22, name: 'Prisma', level: 75, icon: '⚡', category: 'database', color: '#2D3748', experience: '2 years', projects: 6, description: 'ORM, migrations, type safety' },
+    { id: 17, name: 'MongoDB', level: 75, icon: '🍃', category: 'database', color: '#47A248', experience: '1 years', projects: 12, description: 'Aggregation, indexing, mongoose' },
+    { id: 19, name: 'MySQL', level: 85, icon: '🐬', category: 'database', color: '#4479A1', experience: '3 years', projects: 18, description: 'Database design, stored procedures' },
     
     // Tools
-    { id: 23, name: 'Git', level: 90, icon: '📦', category: 'tools', color: '#F05032', experience: '5 years', projects: 30, description: 'Version control, branching, merging' },
+    { id: 23, name: 'Git', level: 90, icon: '📦', category: 'tools', color: '#F05032', experience: '3 years', projects: 30, description: 'Version control, branching, merging' },
     { id: 24, name: 'Docker', level: 70, icon: '🐳', category: 'tools', color: '#2496ED', experience: '2 years', projects: 8, description: 'Containerization, docker-compose' },
-    { id: 25, name: 'VS Code', level: 95, icon: '💻', category: 'tools', color: '#007ACC', experience: '5 years', projects: 30, description: 'Extensions, debugging, customization' },
+    { id: 25, name: 'VS Code', level: 95, icon: '💻', category: 'tools', color: '#007ACC', experience: '3 years', projects: 104, description: 'Extensions, debugging, customization' },
     { id: 26, name: 'Figma', level: 75, icon: '🎯', category: 'tools', color: '#F24E1E', experience: '3 years', projects: 12, description: 'UI/UX design, prototyping' },
-    { id: 27, name: 'Jest', level: 70, icon: '🧪', category: 'tools', color: '#C21325', experience: '2 years', projects: 8, description: 'Unit testing, mocking, coverage' },
-    { id: 28, name: 'Webpack', level: 65, icon: '📦', category: 'tools', color: '#8DD6F9', experience: '2 years', projects: 6, description: 'Bundling, loaders, plugins' },
     { id: 29, name: 'GitHub Actions', level: 70, icon: '⚙️', category: 'tools', color: '#2088FF', experience: '2 years', projects: 7, description: 'CI/CD pipelines, automation' },
-    { id: 30, name: 'AWS', level: 65, icon: '☁️', category: 'tools', color: '#FF9900', experience: '2 years', projects: 5, description: 'EC2, S3, Lambda, deployment' }
+    { id: 30, name: 'AWS', level: 40, icon: '☁️', category: 'tools', color: '#FF9900', experience: '2 years', projects: 5, description: 'EC2, S3, Lambda, deployment' }
   ];
 
   const filteredSkills = activeCategory === 'all' 
