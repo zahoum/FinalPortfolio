@@ -544,3 +544,146 @@
     min-width: auto;
   }
 }
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 0;
+    min-height: auto;
+  }
+
+  .about-content {
+    padding: 0 1rem;
+  }
+
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .typing-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    min-height: 120px;
+    padding: 0 0.5rem;
+  }
+
+  .stats-container {
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .stat-item {
+    min-width: 90px;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+  }
+
+  .tech-marquee-container {
+    margin: 1.5rem 0;
+    padding: 0.8rem 0;
+  }
+
+  .tech-marquee-item {
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .tech-marquee-icon {
+    font-size: 1rem;
+  }
+
+  .about-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.8rem 2rem;
+    min-width: 200px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .stats-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .stat-item {
+    min-width: auto;
+    padding: 0.5rem;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .section-badge {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.8rem;
+  }
+
+  .tech-title {
+    font-size: 1.2rem;
+  }
+
+  .tech-marquee-track {
+    gap: 0.8rem;
+  }
+
+  .tech-marquee-item {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.75rem;
+    gap: 0.3rem;
+  }
+
+  .btn {
+    min-width: 180px;
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .typing-text {
+    font-size: 0.85rem;
+    min-height: 140px;
+  }
+
+  .stats-container {
+    gap: 0.8rem;
+  }
+
+  .stat-number {
+    font-size: 1.3rem;
+  }
+
+  .about-buttons {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
