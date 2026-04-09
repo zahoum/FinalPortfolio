@@ -382,10 +382,15 @@
   background: transparent;
   border: 2px solid var(--accent-color);
   color: var(--text-primary);
+  text-decoration: none;
 }
 
 .btn-outline:hover {
   background: var(--accent-color);
   color: white;
   transform: translateY(-3px);
+}
+.cv-btn {
+  text-decoration: none;
+  color: rgb(87, 83, 79);
 }
