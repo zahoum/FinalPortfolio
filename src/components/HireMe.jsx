@@ -150,11 +150,6 @@ const HireMe = () => {
                 <h3>Working Hours</h3>
                 <p>Mon-Fri: 9AM - 6PM</p>
               </div>
-              <div className="info-card">
-                <div className="info-icon">💳</div>
-                <h3>Payment Methods</h3>
-                <p>PayPal / Bank Transfer</p>
-              </div>
             </div>
 
             <form className="hire-form" onSubmit={handleSubmit}>
@@ -173,7 +168,7 @@ const HireMe = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  placeholder="John Doe"
+                  placeholder="Your Name"
                 />
               </div>
 
@@ -187,7 +182,7 @@ const HireMe = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    placeholder="john@example.com"
+                    placeholder="YourEmail@example.com"
                   />
                 </div>
                 <div className="form-group">
