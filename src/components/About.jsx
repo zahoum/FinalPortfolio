@@ -60,32 +60,63 @@ const About = () => {
             </div>
           </div>
 
+          {/* Nouvelle section Tech Stack avec défilement horizontal */}
           <div className="tech-stack">
             <h3 className="tech-title">Tech Stack</h3>
-            <div className="tech-grid-modern">
-              <div className="tech-category-modern">
-                <span className="tech-cat-icon">⚛️</span>
-                <span>React</span>
-              </div>
-              <div className="tech-category-modern">
-                <span className="tech-cat-icon">💚</span>
-                <span>Node.js</span>
-              </div>
-              <div className="tech-category-modern">
-                <span className="tech-cat-icon">🐍</span>
-                <span>Python</span>
-              </div>
-              <div className="tech-category-modern">
-                <span className="tech-cat-icon">🐘</span>
-                <span>PHP</span>
-              </div>
-              <div className="tech-category-modern">
-                <span className="tech-cat-icon">🗄️</span>
-                <span>MongoDB</span>
-              </div>
-              <div className="tech-category-modern">
-                <span className="tech-cat-icon">🐬</span>
-                <span>MySQL</span>
+            <div className="tech-marquee-container">
+              <div className="tech-marquee-wrapper">
+                <div className="tech-marquee-track">
+                  {/* Première série */}
+                  <div className="tech-marquee-item">
+                    <span className="tech-marquee-icon">⚛️</span>
+                    <span>React</span>
+                  </div>
+                  <div className="tech-marquee-item">
+                    <span className="tech-marquee-icon">💚</span>
+                    <span>Node.js</span>
+                  </div>
+                  <div className="tech-marquee-item">
+                    <span className="tech-marquee-icon">🐍</span>
+                    <span>Python</span>
+                  </div>
+                  <div className="tech-marquee-item">
+                    <span className="tech-marquee-icon">🐘</span>
+                    <span>PHP</span>
+                  </div>
+                  <div className="tech-marquee-item">
+                    <span className="tech-marquee-icon">🗄️</span>
+                    <span>MongoDB</span>
+                  </div>
+                  <div className="tech-marquee-item">
+                    <span className="tech-marquee-icon">🐬</span>
+                    <span>MySQL</span>
+                  </div>
+                  {/* Duplicate pour effet infini */}
+                  <div className="tech-marquee-item">
+                    <span className="tech-marquee-icon">⚛️</span>
+                    <span>React</span>
+                  </div>
+                  <div className="tech-marquee-item">
+                    <span className="tech-marquee-icon">💚</span>
+                    <span>Node.js</span>
+                  </div>
+                  <div className="tech-marquee-item">
+                    <span className="tech-marquee-icon">🐍</span>
+                    <span>Python</span>
+                  </div>
+                  <div className="tech-marquee-item">
+                    <span className="tech-marquee-icon">🐘</span>
+                    <span>PHP</span>
+                  </div>
+                  <div className="tech-marquee-item">
+                    <span className="tech-marquee-icon">🗄️</span>
+                    <span>MongoDB</span>
+                  </div>
+                  <div className="tech-marquee-item">
+                    <span className="tech-marquee-icon">🐬</span>
+                    <span>MySQL</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
