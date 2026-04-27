@@ -189,7 +189,7 @@ const About = () => {
               Hire Me ✨
             </button>
             <button className="btn btn-outline">
-              <a href="/cv.pdf" className="cv-btn">Download CV 📄</a>
+              <a href="/AISSA_ZAHOUM.pdf" download  className="cv-btn">Download CV 📄</a>
             </button>
           </div>
         </div>
